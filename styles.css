@@ -1,0 +1,256 @@
+/* BASICS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #eee;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  height: 700px;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+/* PROFILE */
+
+.container__profile {
+  background: #a281e4;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__left {
+  display: flex;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  border-radius: 50%;
+  background: #b196e9;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.who {
+  background: #b196e9;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  border-radius: 50px;
+  margin: 0 20px;
+  padding: 0 1px;
+  cursor: pointer;
+}
+
+.who__img {
+  width: 40px;
+  height: 40px;
+}
+
+.who__name {
+  color: #fff;
+  margin: 0 15px 0 5px;
+  text-transform: capitalize;
+}
+
+.completion {
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  height: 250px;
+  margin: 140px 0;
+}
+
+.steps__item {
+  display: flex;
+  flex-direction: column;
+  color: #b196e9;
+}
+
+.steps__item--completed {
+  color: #fff;
+}
+
+.text--item {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.text--completed {
+  text-transform: uppercase;
+}
+
+/* NOTIFICATIONS */
+
+.container__notifications {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  background: #e6faff;
+  padding: 20px 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a281e4;
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn__bell {
+  color: #fff;
+  display: flex;
+}
+
+.btn__bell--circle {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: #a281e4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 3px;
+  right: 5px;
+}
+
+.btn__bell--yellow-circle {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border: solid 2px;
+  border-color: #ffff00;
+}
+
+/* TEAM */
+
+.container__team {
+  position: absolute;
+  display: flex;
+  width: 900px;
+  flex-flow: wrap row;
+  left: 370px;
+  top: 80px;
+}
+
+.teammates-box {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -10px 1px 100px #bfbfbf;
+}
+
+.teammates-box__img {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.teammates-box__name {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #404040;
+}
+
+.teammates-box__occupation {
+  text-transform: capitalize;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.teammates-box__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: #404040;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80%;
+}
+
+.teammates-box--add {
+  background: #b196e9;
+  border: solid 15px;
+  border-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: -10px 0px 100px #bfbfbf;
+}
+
+.vertical-line {
+  border-left: solid 1px;
+  height: 25px;
+  color: #e6e6e6;
+  position: relative;
+  right: 10px;
+}
